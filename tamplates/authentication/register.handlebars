@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{ background-color: #78a0c1; } label{ color:
+      #0e110d; font-size: 40px;} div .name,.email,.age,.pass ,
+      #b,.userType{margin: 40px; }
+    </style>
+  </head>
+  <body>
+    <h3>Registration</h3>
+    <form id="f1" action="/register" method="post">
+      <div class="name">
+        <label for="">Username</label>
+        <input
+          type="text"
+          name="username"
+          
+          value="{{subject.name}}"
+        />
+      </div>
+      <div class="email">
+        <label for="">Email</label>
+        <input
+          type="email"
+          name="email"
+          
+          value="{{subject.name}}"
+        />
+      </div>
+      <div class="age">
+        <label for="">Age</label>
+        <input
+          type="text"
+          name="age"
+          
+          value="{{subject.age}}"
+        />
+      </div>
+      <div class="userType">
+        <label for="userType">User Type</label>
+        <select name="userType" id="userType" >
+          <option value="Admin">Admin</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Student">Student</option>
+        </select>
+      </div>
+      <div class="pass">
+        <label for="">Password</label>
+        <input
+          type="password"
+          name="password"
+          
+          value="{{subject.name}}"
+        />
+      </div>
+      <div>
+        <button
+          id="b"
+          type="submit"
+          
+        >register</button>
+      </div>
+    </form>
+  </body>
+</html>
