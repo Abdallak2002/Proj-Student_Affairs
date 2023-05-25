@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   body{
+        background-image: url("background.jpeg");
+        background-size: 100%  100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+      }
+   </style>
+   <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+ 
+padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    </head>
+
+    </head>
+    <body>
+        <h3>SUBJECT REGESTRATION</h3>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="sname">subject Name</label>
+              <input type="text" id="sname" name="subjectName" placeholder="enter subject..">
+          
+              <label for="code">subject code</label>
+              <input type="text" id=" code" name="subjectcode" placeholder=" enter subject code..">
+          
+              <label for="department">department</label>
+              <select id="department" name="department">
+                <option value="CS">CS</option>
+                <option value="IT">IT</option>
+                <option value="IS">IS</option>
+              </select>
+          
+               
+              <input type="button" value="SAVE">
+           
+            </form>
+          </div>
+    </body>
+
+
+</html>
